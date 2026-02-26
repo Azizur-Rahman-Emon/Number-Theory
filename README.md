@@ -2,3 +2,4 @@
 Number theory related idea's i have gone through
 
 1) Sieve of Eratosthenes
+2) Binary Exponentiation
