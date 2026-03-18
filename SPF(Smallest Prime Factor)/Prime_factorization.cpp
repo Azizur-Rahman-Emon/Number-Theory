@@ -9,7 +9,7 @@ vector<int> getFactors(int n) {
 int main() {
     buildSPF();
 
-    int n = 60;
+    int n ;
 
     // prime factors
     vector<int> f = getFactors(n);
