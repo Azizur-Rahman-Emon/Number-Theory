@@ -21,3 +21,15 @@ vector<int> getDivisors(int n) {
     sort(divs.begin(), divs.end());
     return divs;
 }
+int main()
+{
+    buildspf();
+     // divisors
+    vector<int> d = getDivisors(n);
+    cout << "Divisors: ";
+    for (int x : d) cout << x << " ";
+    cout << "\n";
+
+    return 0;
+
+}
