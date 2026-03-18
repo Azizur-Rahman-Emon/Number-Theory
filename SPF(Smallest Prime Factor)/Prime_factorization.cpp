@@ -6,3 +6,14 @@ vector<int> getFactors(int n) {
     }
     return f;
 }
+int main() {
+    buildSPF();
+
+    int n = 60;
+
+    // prime factors
+    vector<int> f = getFactors(n);
+    cout << "Prime factors: ";
+    for (int x : f) cout << x << " ";
+    cout << "\n";
+}
