@@ -1,19 +1,18 @@
-vector<int> getFactors(int n) {
-    vector<int> f;
-    while (n > 1) {
-        f.push_back(spf[n]);
-        n /= spf[n];
+vector<long long> primeFactors(long long n)
+{
+    vector<long long> factors;
+
+    for (long long i = 2; i * i <= n; i++)
+    {
+        while (n % i == 0)
+        {
+            factors.push_back(i);
+            n /= i;
+        }
     }
-    return f;
-}
-int main() {
-    buildSPF();
 
-    int n ;
+    if (n > 1)
+        factors.push_back(n);
 
-    // prime factors
-    vector<int> f = getFactors(n);
-    cout << "Prime factors: ";
-    for (int x : f) cout << x << " ";
-    cout << "\n";
+    return factors;
 }
